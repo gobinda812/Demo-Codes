@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(bg2.png);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e2e2e2;
+	
+}
+
+
+/* navigation */
+
+
+header{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-left: 10px;
+   margin: -20px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    margin: 10px 30px ;
+}
+header ul li {
+    display: flex;
+    padding: 10px 20px;
+}
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 2px;
+    opacity: 0.7;
+    font-weight: 600;
+}
+header ul li a:hover{
+    opacity: 1;
+}
+header .logo img{
+   height: 120px;
+   width: 120px;
+   cursor: pointer;
+    
+   
+}
+
+   
+
+
+
+
+/* banner */
+/*section .clouds .text{
+    position: absolute;
+    top: 100px;
+    left: -50px;
+    height: 450px;
+    widows: 250px;
+}*/
+section .banner .clouds .cloud1{
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    height: 167px;
+    width: 196px;
+    animation: cloud1 40s linear infinite;
+}
+@keyframes cloud1{
+    0%{
+        transform: translateX(-400px);
+    }
+    50%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(-400px);
+    }
+}
+section .banner .clouds .cloud2{
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    height: 200px;
+    width: 237px;
+    animation: cloud2 12s linear infinite;
+    opacity: 0.8;
+}
+@keyframes cloud2{
+    0%{
+        transform: translateX(-110px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(-110px);
+    }
+}
+section .banner .clouds .cloud3{
+    position: absolute;
+    top: 20px;
+    right: 500px;
+    height: 107px;
+    width: 126px;
+    animation: cloud2 20s linear infinite;
+    opacity: 0.8;
+}
+@keyframes cloud3{
+    0%{
+        transform: translateX(-110px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(-110px);
+    }
+}
+section .banner .clouds .cloud4{
+    position: absolute;
+    top: 100px;
+    right: 500px;
+    height: 157px;
+    width: 186px;
+    animation: cloud4 20s linear infinite;
+    opacity: 0.8;
+}
+@keyframes cloud4{
+    0%{
+        transform: translateX(-110px);
+    }
+    50%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(-110px);
+    }
+}
+section .banner .clouds .cloud5{
+    position: absolute;
+    top: 120px;
+    right: 400px;
+    height: 117px;
+    width: 126px;
+    animation: cloud5 30s linear infinite;
+}
+@keyframes cloud5{
+    0%{
+        transform: translateX(-110px);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(-110px);
+    }
+}
+section .banner .clouds .mons{
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    height: 150px;
+    width: 90px;
+    transition: 0.5s;
+    animation: mons 4s linear infinite;
+}
+@keyframes mons{
+    0%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+section .clouds .witch{
+    position: absolute;
+    top: 70px;
+    right: 250px;
+    height: 170px;
+    width: 170px;
+    transition: .5s;
+    opacity: 0.9;
+    animation: witch 3s linear infinite;
+}
+@keyframes witch{
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+section .clouds .bird{
+    position: absolute;
+    top: 100px;
+    right: 390px;
+    height: 25px;
+    width: 50px;
+    transition: .5s;
+    animation: bird 5s linear infinite;
+}
+section .clouds .bird2{
+    position: absolute;
+    top: 100px;
+    right: 250px;
+    height: 25px;
+    width: 50px;
+    transition: .5s;
+    animation: bird 5s linear infinite;
+}
+section .clouds .bird3{
+    position: absolute;
+    
+    top: 50px;
+    right: 330px;
+    height: 25px;
+    width: 50px;
+    transition: .5s;
+    animation: bird 5s linear infinite;
+}
+@keyframes bird{
+    0%{
+        transform: translateY(5px)  translateX(5px);
+    }
+    50%{
+        transform: translateY(-5px) translateX(-5px);
+    }
+    100%{
+        transform: translateY(5px) translateX(5px);
+    }
+}
+section .clouds .pump{
+    position: absolute;
+    
+    bottom: -50px;
+    right: 340px;
+    height: 225px;
+    width: 200px;
+  animation: pump 4s linear infinite;
+}
+@keyframes pump{
+    0%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+  
+
+
+
+
+/* content */
+
+.container .content h2{
+    position: relative;
+    left: 50px;
+    top: 50px;letter-spacing: 1px;
+    font-size: 70px;
+    color: rgb(236, 110, 26);
+    font-weight: 800;
+    text-transform: uppercase;
+    
+}
+.container .content h2 span img{
+  position:absolute;
+  top: -20px;
+  left: 150px;
+  height: 120px;
+  width: 120px;
+  transition: .5s;
+  opacity: 0.8;
+  animation: pumpkin 5s linear infinite;
+    
+}
+@keyframes pumpkin {
+    0%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+.container .content h5{
+    position: relative;
+    left: 50px;
+    top: 20px;letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 800;
+    opacity: 0.7;
+    text-transform: uppercase;
+    
+}
+.container .content p{
+    position: relative;
+    left: 50px;
+    top: 20px;
+    font-size: 25px;
+    /* font-style: italic; */
+    font-weight: 300;
+    line-height: 29px;
+}
+.container .content button{
+    position: relative;
+    left: 52px;
+    top: 40px;
+    padding: 14px;
+    border-radius: 20px;
+    background-color: rgb(236,110,26);
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    /* font-weight: 800; */
+    
+}
+/*responsive*/
+@media screen and (max-width: 400px) {
+body{  
+    min-height: 1vh;
+}
+header .logo img{
+   height: 70px;
+   width: 70px;
+}
+header ul{
+    margin: 10px 3px ;
+}
+header ul li {
+    padding: 15px 3px;
+	
+}
+header ul li a{
+    font-size: 9px;
+	text-transform: uppercase;
+    line-height: 2px;
+    opacity: 0.7;
+    font-weight: 800;
+}
+.container .content h2{
+    left: 8px;
+    top: 80px;
+	font-size: 28px;
+    
+    
+}
+.container .content h2 span img{
+  top: -12px;
+  left: 58px;
+  height: 60px;
+  width: 60px;
+     
+}
+.container .content h5{
+    left: 8px;
+    top:85px;
+    font-size: 20px;
+    
+    
+}
+.container .content p{
+    left: 8px;
+    top: 80px;
+    font-size: 16px;
+   }
+   .container .content button{
+    left: 8px;
+    top: 80px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+.witch{
+    top: 20px !important;
+    right: 65px !important;
+    height: 60px !important;
+    width: 60px !important;
+    transition: .5s;
+    opacity: 0.9;
+    animation: witch 3s linear infinite;
+}
+@keyframes witch{
+    30%{
+        transform: translateY(-5px);
+   
+}
+}
+.mons{
+    bottom: 350px !important;
+    right: 5px !important;
+    height: 75px !important;
+    width: 60px !important;
+    transition: 0.5s;
+    animation: mons 4s linear infinite;
+}
+.pump{
+    bottom: 340px !important;
+    right: 80px !important;
+    height: 85px !important;
+    width: 80px !important;
+  animation: pump 4s linear infinite;
+}
+.bird{
+    top: 20px !important;
+    right: 45px !important;
+    height: 25px !important;
+    width: 30px !important;
+    transition: .5s;
+    animation: bird 5s linear infinite;
+}
+section .clouds .bird2{
+    
+    top: 34px;
+    right: 115px;
+    height: 25px !important;
+    width: 30px !important;
+    transition: .5s;
+    animation: bird 5s linear infinite;
+}
+section .clouds .bird3{
+    
+    top: 5px;
+    right: 80px !important; 
+    height: 20px !important;
+    width: 35px !important;
+    transition: .2s;
+    animation: bird 2s linear infinite;
+}
+@keyframes bird{
+    30%{
+        transform: translateY(-4px) translateX(-4px);
+    }
+}
+.cloud1{
+   
+    top: 55px !important;
+    right: 60px !important;
+    height: 45px !important;
+    width: 55px !important;
+    animation: cloud1 40s linear infinite;
+}
+@keyframes cloud1{
+    0%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(-50px);
+    }
+}
+section .banner .clouds .cloud2{
+    top: 50px;
+    right: 50px;
+    height: 30px !important;
+    width: 33px !important;
+    animation: cloud2 12s linear infinite;
+    opacity: 0.8;
+}
+@keyframes cloud2{
+    0%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(-50px);
+    }
+}
+section .banner .clouds .cloud3{
+    
+    top: 50px;
+    right: 70px;
+    height: 40px;
+    width: 45px;
+    animation: cloud2 20s linear infinite;
+    opacity: 0.8;
+}
+@keyframes cloud3{
+    0%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(8px);
+    }
+    100%{
+        transform: translateX(-50px);
+    }
+}
+section .banner .clouds .cloud4{
+    
+    top: 5px;
+    right: 60px;
+    height: 50px;
+    width: 60px;
+    animation: cloud4 20s linear infinite;
+    opacity: 0.8;
+}
+@keyframes cloud4{
+    0%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(-50px);
+    }
+}
+section .banner .clouds .cloud5{
+    
+    top: 8px;
+    right: 5px;
+    height: 40px;
+    width: 45px;
+    animation: cloud5 30s linear infinite;
+}
+@keyframes cloud5{
+    0%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(55px);
+    }
+    100%{
+        transform: translateX(-50px);
+    }
+}
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Log validation</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!--<style>
+.login_form #em_error
+.login_form #pass_error{
+  margin-top:5px;
+  width:345px;
+  color:#c62828;
+  background:rgbs(255,0,0,0.1);
+  text-align:center;
+  padding:5px 8px;
+ display:none; 
+}
+</style>-->
+</head>
+<body>
+<form method="post" class="login_form" name="form" action="https://www.wikipedia.org/" onsubmit="return validated()">
+  <div class="form-group">
+  <label for="username">Email:<label><br>
+    
+	<input class="form-control" autocomplete="off" type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+	</div>
+	<div id="em_error" style="margin-top:5px;
+  width:345px;
+  color:#c62828;
+  background:rgbs(255,0,0,0.1);
+  text-align:center;
+  padding:5px 8px;
+ display:none;">Fill up your Email</div>
+  
+  <div class="form-group">
+  <label for="Password">Password:</label><br>
+    <input type="password" class="form-control" name="password" required>
+	<div id="pass_error" style="margin-top:5px;
+  width:345px;
+  color:#c62828;
+  background:rgbs(255,0,0,0.1);
+  text-align:center;
+  padding:5px 8px;
+ display:none;">Enter valid password</div>
+  </div>
+      <br>
+    <button type="submit">Login
+    </button>
+</form>
+
+<script type="text/javascript">
+   var email = document.forms['form']['email'];  
+   var password = document.forms['form']['password'];  
+    
+	var em_error = document.getElementById('em_error');	
+	var pass_error = document.getElementById('pass_error');	
+	
+	email.addEventListener('textInput',email_Verify);
+	password.addEventListener('textInput',pass_Verify);
+	
+	
+	function validated(){
+			if(email.value.length<9){
+			email.style.border= "1px solid red";
+			em_error.style.display= "block";
+			email.focus();
+			return false;
+			
+			} 
+			if(password.value.length<9){
+			password.style.border= "1px solid red";
+			pass_error.style.display= "block";
+			password.focus();
+			return false;
+			
+			}
+	
+	}
+	
+	function email_Verify(){
+		if(email.value.length>=8){
+			email.style.border= "1px solid silver";
+			em_error.style.display= "none";
+			return true;
+			
+			}	
+	
+	}
+	function pass_Verify(){
+		if(password.value.length>=9){
+			password.style.border= "1px solid silver";
+			pass_error.style.display= "none";
+			return true;
+			
+			}	
+	
+	}
+</script>
+</body>
+</html>

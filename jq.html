@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>new project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ <style>
+.navbar{
+    background: #16222A !important;
+}
+.navbar .nav-item .nav-link{
+    color:#fff !important;
+		font-family: Helvatica;
+		
+    
+}
+.navbar-toggler{
+
+background-color: #fff;
+}
+.navbar .nav-item .nav-link:hover{
+    color:#33adff !important;
+	border-bottom: 1px solid #33adff;
+    
+}
+ 
+ 
+footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top:20px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+.row.heading h2 {
+    color: #fff;
+    font-size: 52.52px;
+    line-height: 95px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+body{
+background-image:url("s2.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+.card-header h3{
+color: white;
+}
+
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    position: relative;
+    margin: 25px 0 50px
+}
+
+h2::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 3px;
+    background: #ffdc12;
+    left: 0;
+    right: 0;
+    bottom: -10px
+}
+
+.carousel {
+    width: 650px;
+    margin: 0 auto;
+    padding-bottom: 50px
+}
+
+.carousel .item {
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 340px
+}
+
+.carousel .item a {
+    color: #eb7245
+}
+
+.carousel .img-box {
+    width: 145px;
+    height: 145px;
+    margin: 0 auto;
+    border-radius: 50%
+}
+
+.carousel .img-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%
+}
+
+.carousel .testimonial {
+    padding: 30px 0 10px
+}
+
+.testimonial {
+    color: #000000;
+    font: Times Roman
+}
+
+.carousel .overview {
+    text-align: center;
+    padding-bottom: 5px
+}
+
+.carousel .overview b {
+    color: #333;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: 5px
+}
+
+.carousel .star-rating i {
+    font-size: 18px;
+    color: #ffdc12
+}
+
+.carousel .carousel-control {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #999;
+    text-shadow: none;
+    top: 4px
+}
+
+.carousel-control i {
+    font-size: 20px;
+    margin-right: 2px
+}
+
+.carousel-control.left {
+    left: auto;
+    right: 40px
+}
+
+.carousel-control.right i {
+    margin-right: -2px
+}
+
+.carousel .carousel-indicators {
+    bottom: 15px
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+    width: 11px;
+    height: 11px;
+    margin: 1px 5px;
+    border-radius: 50%
+}
+
+.carousel-indicators li {
+    background: #e2e2e2;
+    border-color: transparent
+}
+
+.carousel-indicators li.active {
+    border: none;
+    background: #888
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img class="logo horizontal-logo" src="img/logo.svg" style="width:30px; height: 30px;">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+          </li>
+      <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+      <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+          
+      <li class="nav-item dropdown">
+            <a class="nav-link " href="#" data-toggle="dropdown">
+        SIGN UP
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">SELLER ACCOUNT</a>
+        <a class="dropdown-item" href="/accounts/traveller/account">USER ACCOUNT</a>
+        
+      </div>
+    </li>
+           
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+			<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card shadow-lg bg-primary">
+			<div class="card-header">
+				<h3>Sign In</h3>
+				
+			</div>
+			<div class="card-body">
+				<form>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fa fa-user"></i></span>
+						</div>
+						<input type="text" class="form-control" placeholder="username">
+						
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fa fa-key"></i></span>
+						</div>
+						<input type="password" class="form-control" placeholder="password">
+					</div>
+					<div class="row align-items-center remember">
+						<input type="checkbox">Remember Me
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Login" class="btn float-right login_btn">
+					</div>
+				</form>
+			</div>
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Don't have an account?<a href="#">Sign Up</a>
+				</div>
+				<div class="d-flex justify-content-center">
+					<a href="#">Forgot your password?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class='col-md-10 offset-md-1 text-center mb-5 mt-5'>
+    <h2>What our partner says</h2>
+    </div>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol> <!-- Wrapper for carousel items -->
+    <div class="carousel-inner">
+        <div class="item carousel-item active">
+		
+            <div class="Card">
+            <div class="img-box">
+			<img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1558758981/male-2634974_640.jpg" alt=""></div>
+			<p class="overview"><b>Paula Wilsons</b>Seo Analyst </p>
+            <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>       
+             </div>
+             </div>
+             
+        <div class="item carousel-item">
+            <div class="img-box"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1558758980/people-875617_1280.jpg" alt=""></div>
+			<p class="overview"><b>Paula Wilsons</b>Seo Analyst </p>
+            <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum idac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+        </div>
+        <div class="item carousel-item">
+            <div class="img-box"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1558758980/portrait-1287413_640.jpg" alt=""></div>
+            <p class="overview"><b>Paula Wilsons</b>Seo Analyst </p>
+			<p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit.</p>
+            
+        </div>
+    </div> <!-- Carousel controls --> <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev"> <i class="fa fa-angle-left"></i> </a> <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next"> <i class="fa fa-angle-right"></i> </a>
+</div>
+		
+		<footer class="mainfooter mt-2" role="contentinfo">
+            <div class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Heading 1</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#">Payment Center</a></li>
+                                    <li><a href="#">Contact Directory</a></li>
+                                    <li><a href="#">Forms</a></li>
+                                    <li><a href="#">News and Updates</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Heading 2</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Website Tutorial</a></li>
+                                    <li><a href="#">Accessibility</a></li>
+                                    <li><a href="#">Disclaimer</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Webmaster</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Heading 3</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Parks and Recreation</a></li>
+                                    <li><a href="#">Public Works</a></li>
+                                    <li><a href="#">Police Department</a></li>
+                                    <li><a href="#">Fire</a></li>
+                                    <li><a href="#">Mayor and City Council</a></li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Follow Us</h4>
+                            <ul class="social-network social-circle">
+                                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-github"></i></a>
+                                </li>
+                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 copy">
+                            <p class="text-center">&copy; Copyright 2018 - Company Name. All rights reserved.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    
+    </footer>
+
+<script type="text/javascript">
+$("#TextBox1").datepicker({
+    minDate: 0,
+    maxDate: '+1Y+6M',
+    onSelect: function (dateStr) {
+        var min = $(this).datepicker('getDate'); // Get selected date
+        $("#TextBox2").datepicker('option', 'minDate', min || '0'); // Set other min, default to today
+    }
+});
+
+$("#TextBox2").datepicker({
+    minDate: '0',
+    maxDate: '+1Y+6M',
+    onSelect: function (dateStr) {
+        var max = $(this).datepicker('getDate'); // Get selected date
+        $('#datepicker').datepicker('option', 'maxDate', max || '+1Y+6M'); // Set other max, default to +18 months
+        var start = $("#TextBox1").datepicker("getDate");
+        var end = $("#TextBox2").datepicker("getDate");
+        var days = (end - start) / (1000 * 60 * 60 * 24);
+        $("#TextBox3").val(days);
+    }
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>new project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+ <style>
+.navbar{
+    background: #16222A !important;
+}
+.navbar .nav-item .nav-link{
+    color:#fff !important;
+		font-family: Helvatica;
+		
+    
+}
+.navbar-toggler{
+
+background-color: #fff;
+}
+.navbar .nav-item .nav-link:hover{
+    color:#33adff !important;
+	border-bottom: 1px solid #33adff;
+    
+}
+ 
+ 
+
+footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top:20px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+.row.heading h2 {
+    color: #fff;
+    font-size: 52.52px;
+    line-height: 95px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(180deg, rgb(255, 166, 166), #fff);
+    background-repeat: no-repeat
+}
+h3 {
+    color: #9E9E9E;
+    font-size: calc(20px + 6 * ((100vw - 320px) / 680))
+}
+
+button:focus {
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.card {
+    border-radius: 0;
+    width: calc(475px + 10 * ((100vw - 320px) / 680));
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8)
+}
+
+.card-header {
+    background-color: #F44236 !important;
+    color: #fff
+}
+
+.btn-primary {
+    background: #B52AB4;
+    color: #fff !important;
+    border-radius: 0 !important;
+    letter-spacing: 1px
+}
+
+.btn-primary:hover {
+    background: #B52AB4
+}
+
+.btn-primary:focus {
+    background: #B52AB4 !important
+}
+
+.btn-success {
+    border: 1px solid #B52AB4;
+    padding: 8px 20px 8px 20px !important;
+    border-radius: 20px !important
+}
+
+.btn-success:hover {
+    background: #B52AB4;
+    color: #fff !important;
+    border-color: #B52AB4 !important
+}
+
+.btn-success:focus {
+    background: #B52AB4 !important;
+    color: #fff !important
+}
+
+.btn-success {
+    background: #B52AB4 !important
+}
+
+.inner li {
+    list-style-type: disc !important
+}
+
+.fa-times-circle {
+    vertical-align: middle !important;
+    cursor: pointer !important
+}
+
+@media (max-width: 654px) {
+    .card {
+        width: unset
+    }
+}
+</style>
+</head>
+<body style="background-color:rgba(0,0,0,.03)">
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img class="logo horizontal-logo" src="img/logo.svg" style="width:30px; height: 30px;">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+          </li>
+      <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+      <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+          
+      <li class="nav-item dropdown">
+            <a class="nav-link " href="#" data-toggle="dropdown">
+        SIGN UP
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">SELLER ACCOUNT</a>
+        <a class="dropdown-item" href="/accounts/traveller/account">USER ACCOUNT</a>
+        
+      </div>
+    </li>
+           
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<div class="container my-5 d-flex justify-content-center">
+    <div class="row justify-content-center ">
+        <div class="col">
+            <div class="card ">
+                <div class="card-header pb-0 bg-white border-0 text-center px-sm-4">
+                    <h6 class="text-left mt-4 font-weight-bold mb-0"><span><i class="fa fa-times-circle fa-2x mr-3 " aria-hidden="true"></i> </span> No internet connection</h6> <span class="img-1 text-center"><img src="https://www.revenera.com/blog/wp-content/uploads/2016/05/6a010537097f24970b01b7c8581337970b-320wi.png" class="img-fluid my-4 " /></span>
+                </div>
+                <div class="card-body px-sm-4 mb-3">
+                    <ul class="list-unstyled text-muted">
+                        <li>Please re-connect to the internet to continue use Footsteps.</li>
+                        <li>If you encounter problems:</li>
+                        <ul class="mt-2 inner">
+                            <li>Try restarting wireless connection on this device.</li>
+                            <li>Move clouse to your wireless access point.</li>
+                        </ul>
+                    </ul>
+                    <div class="row justify-content-end mt-4 ">
+                        <div class="col-auto"><button type="button" class="btn btn-success"><span>Try Again</span></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		
+		<footer class="mainfooter mt-2" role="contentinfo">
+            <div class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Heading 1</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#">Payment Center</a></li>
+                                    <li><a href="#">Contact Directory</a></li>
+                                    <li><a href="#">Forms</a></li>
+                                    <li><a href="#">News and Updates</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Heading 2</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Website Tutorial</a></li>
+                                    <li><a href="#">Accessibility</a></li>
+                                    <li><a href="#">Disclaimer</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Webmaster</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Heading 3</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Parks and Recreation</a></li>
+                                    <li><a href="#">Public Works</a></li>
+                                    <li><a href="#">Police Department</a></li>
+                                    <li><a href="#">Fire</a></li>
+                                    <li><a href="#">Mayor and City Council</a></li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Follow Us</h4>
+                            <ul class="social-network social-circle">
+                                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-github"></i></a>
+                                </li>
+                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 copy">
+                            <p class="text-center">&copy; Copyright 2018 - Company Name. All rights reserved.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    
+    </footer>
+
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>

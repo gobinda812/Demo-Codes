@@ -1,0 +1,429 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+/*similar style*/
+.section-title h4 {
+	text-transform: capitalize;
+	font-size: 40px;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-weight: 600;
+	font-family: 'Ubuntu', sans-serif;
+	
+}
+.section-title h4:before {
+	position: absolute;
+	content: "";
+	width: 60px;
+	height: 2px;
+	background-color: #ff3636;
+	bottom: 0;
+	left: 50%;
+	margin-left: -30px;
+}
+.section-title h4:after {
+	position: absolute;
+	background-color: #ff3636;
+	content: "";
+	width: 10px;
+	height: 10px;
+	bottom: -4px;
+	left: 50%;
+	margin-left: -5px;
+	border-radius: 50%;
+}
+
+
+
+
+/* navbar styling */
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
+
+
+
+/* Carousel start*/
+.carousel {
+  margin-bottom: 4rem;
+  
+}
+.carousel-caption {
+  z-index: 10;
+  bottom: 10rem;
+}
+.carousel-item {
+  height: 40rem;
+  background-color: #777;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 45rem;
+  
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.carousel-caption a{
+	 display: inline-block;
+    background: #F9D423;
+    color: #fff;
+    font-size: 25px;
+    padding: 11px 34px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #F9D423;
+    transition: all 0.3s ease;
+}
+.carousel-caption a:hover{
+	color: #fff;
+    background: none;
+	text-decoration:none;
+}
+
+.carousel-caption p{
+	font-family: 'Poppins', sans-serif;
+}
+.carousel-caption h2{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 60px;
+	font-weight:300px;
+}
+.carousel-indicators{
+	display: none;
+}
+/*search bar*/
+.search-sec{
+    background: #fff;
+	padding: 3rem;
+	margin-top: -140px;
+    z-index: 1;
+    position: relative;
+	margin-left:80px;
+	margin-right:80px;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	 border-radius:20px;
+ 
+}
+
+.search-sec label{
+	color: #262626;
+    font-size: 18px;
+    font-weight: 600;
+	margin-bottom:20px;
+   }
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #F9D423;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+	border-radius:20px;
+}
+
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+     height: calc(3rem + 2px) !important;
+     border-radius:0;
+	 border-radius:20px;
+	 margin-top:45px;
+}
+
+
+/*service*/
+.pt-100 {
+	padding-top: 100px;
+}
+.pb-100 {
+	padding-bottom: 100px;
+}
+
+.section-title {
+  margin-bottom: 60px;
+  
+	
+}
+.section-title p {
+	color: #777;
+	font-size: 16px;
+}
+
+.single-service {
+	border: 1px solid #eee;
+	padding: 30px 10px;
+	position: relative;
+	text-align: center;
+	margin-bottom: 30px;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+.single-service:hover{
+background-color:blue;
+color:#fff;
+cursor:pointer;
+}
+.single-service i.fa {
+  width: 60px;
+  height: 60px;
+  background-color: #ff3636;
+  font-size: 25px;
+  color: #fff;
+  line-height: 60px;
+  text-align:center;
+  margin-bottom:20px;
+}
+.single-service i.fa {
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+.single-service:hover i.fa {
+	border-radius: 50%;
+}
+.single-service h4 {
+	text-transform: capitalize;
+	font-size: 22px;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+/*Rooms*/
+.box6{background:#000;position:relative}
+.box6:after{background:rgba(0,0,0,.7);position:absolute;top:0;left:-30%;bottom:0;right:70%;transform:skew(20deg) translateX(-75%)}
+.box6:hover:after{transform:skew(20deg) translateX(0)}
+.box6 img{width:100%;height:400px;}
+.box6:hover img{opacity:.5}
+.box6 .box-content{padding:20px;text-align:right;position:absolute;top:0;right:0;z-index:1}
+.box6 .icon,.box7 .icon{padding:0;list-style:none}
+.box10 .icon li a,.box11,.box12,.box13,.box14,.box6 .icon li a,.box7,.box7 .icon li a,.box8,.box8 .icon li a{text-align:center}
+.box6 .title{font-size:20px;font-weight:900;color:#fff;margin:0 0 10px;transform:scale(0)}
+.box6:hover .title{transform:scale(1)}
+.box6 .icon li,.box6 .post{opacity:0;transform:translateX(40px);transition:all .35s ease 0s}
+.box6 .post{display:block;font-size:14px;color:#fff;margin-bottom:5px}
+.box6 .book a{display:block;font-weight: 500;
+	text-decoration:none; font-size:20px;color:#fff;margin-top:260px;
+	padding: 5px 20px; background:crimson;  border: 2px solid crimson;
+   border-radius:20px;
+	}
+
+.box6 .book a:hover{color: #fff;
+    background: none;}
+
+.box6 .icon{display:inline-block;margin:0}
+.box6:hover .icon li,.box6:hover .post{opacity:1;font-size:20px; transform:translateX(0)}
+.box6:hover .icon li:first-child{transition-delay:.1s}
+.box6:hover .icon li:nth-child(2){transition-delay:.2s}
+.box6 .icon li a{display:block;width:35px;height:35px;line-height:35px;background:#fff;font-size:18px;color:#605f5f;margin-bottom:5px;transition:all .35s ease}
+.box6 .icon li a:hover{background:#605f5f;color:#fff}
+@media only screen and (max-width:990px){.box6{margin-bottom:30px}
+}
+
+/*Footer*/
+
+
+#footer {
+	padding: 60px 0;
+    background: #0d141c !important;
+	/* background: url(img/s3.jpg) no-repeat center;
+    background-size: cover;*/
+}
+#footer h5{
+	font-weight: 600;
+	font-size: 30px;
+	font-family: 'Ubuntu', sans-serif;
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+	
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+	
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+	
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+.owl-dots{
+		display: none;
+}
+.owl-carousel owl-theme.item{
+		height: 300px; /* [1.1] Set it as per your need */
+		
+
+}
+.owl-carousel owl-theme.item img{
+	display: block;
+  transition: transform .5s ease;
+	
+}
+
+.owl-carousel .item:hover img{
+	transform: scale(1.2);
+	overflow: hidden !important; /* [1.2] Hide the overflowing of child elements */
+	}
+
+@media screen and (max-width: 400px) {
+.carousel-caption a{
+	 
+    font-size: 17px;
+    padding: 10px 24px;
+    font-weight: 200;
+    
+}
+.carousel-caption h2{
+	font-size: 40px;
+	font-weight:300px;
+}
+.search-sec{
+    padding: 1rem;
+	margin-left:50px;
+	margin-right:50px;
+	}
+}
+@media screen and (max-width: 600px) {
+.search-sec{
+    padding: 1rem;
+	
+ 
+}
+}
+@media screen and (max-width: 768px) {
+
+.search-sec{
+    padding: 2rem;
+	margin-left:10px;
+	margin-right:10px;
+	}
+	.search-slt{
+    display: inline;
+    width: 105%;
+	
+    }
+	.search-sec label{
+	font-size: 15px;
+    font-weight: 600;
+	margin-bottom:20px;
+	margin-left:1px !important;
+   }
+}
+
+@media screen and (max-width: 900px) {
+.search-sec{
+    padding: 1rem;
+	 
+}
+}

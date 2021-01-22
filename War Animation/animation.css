@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+	overflow: hidden;
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(img/road.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e2e2e2;
+    
+}

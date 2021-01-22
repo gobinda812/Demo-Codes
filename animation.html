@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Animation class</title>
+
+<!--<style type="text/css">
+	body{
+		background: #abcdef;
+	}
+	.trans{
+		height: 200px;
+		width: 200px;
+		background: red;
+		transition: all 1.5s ease-in-out;
+	}
+	.trans:hover{
+
+		transform: translate(200px,250px);
+		background: #f0f;
+		transition: all 1.5s ease-in-out;
+	}
+</style>-->
+<style type="text/css">
+	body{
+		background: #abcdef;
+	}
+	.trans{
+		border-radius:150px;
+		height: auto;
+		width: 200px;
+		height: 200px;
+		margin: 10px ;
+		float: left;
+		background: #f00;
+		position: relative;
+		transition: all 1s ease-in-out;
+		padding: 15px;
+		overflow: hidden;
+		/*animation-name: anim;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		animation-delay: 5s;*/
+		animation: anim 5s linear 2s infinite alternate;
+	}
+	.resp{
+		width:100%;
+		height: auto;
+	}
+	@keyframes anim{
+		0%{left: 0; top: 0; background: #f00;}
+		25%{left: 500px; top: 0; background: #0f0;}
+		50%{left: 500px; top: 400px; background: #00f;}
+		75%{left: 0; top: 400px; background: #ff0;}
+		100%{left: 0px; top: 0; background: #f00;}	
+	}
+	/*.trans img{
+		transition: all 1s ease-in-out;
+	}
+	.trans img:hover{
+		transform: translate(20px,20px) rotate(45deg) scale(1.5) skew(10deg);
+		transform: rotate(360deg);
+		transform: scale(1.5);
+		transform: skew(20deg,20deg);
+		background: #f0f;
+		transition: all 1s ease-in-out;
+	}*/
+	/*.btn{
+		overflow: hidden;
+		clear: both;
+		width: 100px;
+		background: #f00;
+		columns: #fff;
+		padding: 10px 20px;
+		text-decoration: none;
+		transition: all 1s ease-in-out;
+	}
+	
+	.btn:hover{
+		background: #000;
+		transform: skew(10deg);
+			transition: all .4s ease-in-out;
+
+	}*/
+</style>
+</head>
+
+<body>
+<!--<div class="trans">
+	<img src="s2.jpg" class="resp">
+</div>
+<div class="trans">
+	<img src="s2.jpg" class="resp">
+</div>
+<div class="trans">
+	<img src="s2.jpg" class="resp">
+</div>
+<div class="trans">
+	<img src="s2.jpg" class="resp">
+</div>
+<div class="trans">
+	<img src="s2.jpg" class="resp">
+</div>
+<div class="trans">
+	<img src="s2.jpg" class="resp">
+</div>
+<div class="btn"><a href="#" class="btn">Click Me</a></div>	-->
+<div class="trans">
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>dblmdlbm</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+
+<script type="text/javascript">
+    function EnableDisableTextBox(ddlModels) {
+        var selectedValue = ddlModels.options[ddlModels.selectedIndex].value;
+        var txtOther = document.getElementById("txtOther");
+        txtOther.disabled = selectedValue == 1||2 ? false : true;
+        if (!txtOther.disabled) {
+            txtOther.focus();
+        }
+    }
+</script>
+<span>Your favorite Bike model?</span>
+<select id = "ddlModels" onchange = "EnableDisableTextBox(this)">
+    <option value = "1">Adhar</option>
+    <option value = "2">Pan</option>
+</select>
+<br />
+<br />
+Other:
+<input type="text" id="txtOther" disabled="disabled" />
+
+</body>
+</html>

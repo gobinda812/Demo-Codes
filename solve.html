@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>new project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ <style>
+ body {
+ background-image: url("trav.gif");
+ background-size: cover;
+}
+ .navbar{
+    background: #16222A !important;
+}
+.navbar .nav-item .nav-link{
+    color:#fff !important;
+		font-family: Helvatica;
+		
+    
+}
+.navbar-toggler{
+
+background-color: #fff;
+}
+.navbar .nav-item .nav-link:hover{
+    color:#33adff !important;
+	border-bottom: 1px solid #33adff;
+    
+}
+.form-control {
+    height: calc(2.5em + .75rem + 2px);
+    }
+
+/*.col-md-9 {
+	background-color: #fff;
+	padding-top:20px;
+	padding-bottom:20px;
+	border-radius:15px;
+}*/
+
+
+.register-right{
+    background: #dcfaff;
+	padding:40px;
+	
+	
+}
+.register .register-form{
+    width:100%;
+    margin-top: 20%;
+}
+.btnRegister{
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+.register .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: #0062cc;
+    border-radius: 1.5rem;
+    width: 20%;
+    float: center;
+}
+.register .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: -15%;
+    color: #495057;
+}
+.register{
+    background: #343a40;
+}
+ </style>
+ <body>
+ <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img class="logo horizontal-logo" src="img/logo.svg" style="width:30px; height: 30px;">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+      <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+      <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+          
+      <li class="nav-item dropdown">
+            <a class="nav-link " href="#" data-toggle="dropdown">
+        SIGN UP
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">SELLER ACCOUNT</a>
+        <a class="dropdown-item" href="/accounts/traveller/account">USER ACCOUNT</a>
+        
+      </div>
+    </li>
+           
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--check out-->
+<div class="container">
+    <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        
+		<h2 class="text-white">Checkout form </h2>
+        <p class="lead text-white">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-3 order-md-2 mb-4" >
+           
+		   <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-white">Your cart</span>
+                   </h4>
+            
+			<ul class="list-group mb-3 sticky-top"">
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Tour name</h6>
+                        <small class="text-muted">Brief description</small>
+                    </div>
+                    
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">Price per People</h6>
+                      
+                    </div>
+                    <span class="text-muted">$8</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <input type="number" id="quantityField" class="form-control" max="30" min="0" placeholder="Total no. of People" style="width:100%;">
+                    
+                    </li>
+                <li class="list-group-item d-flex justify-content-between bg-light">
+                    
+                        <h6 class="my-0">Total seats left</h6>
+                        
+                    <span >-$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span >Total (USD)</span>
+                    <strong id="totalField"></strong>
+                </li>
+            </ul>
+            
+        </div>
+		
+        <div class="col-md-9 order-md-1">
+            <h4 class="mb-3">Booking details</h4>
+            <form>
+			<div class="form-group">
+    <label><i class="fa fa-user-circle fa-lg"=></i>&nbsp;Full Name </label>
+    <input type="text" class="form-control" id="username"  placeholder="Username" required value="{{request.user.name}}" name="name">
+	<div class="invalid-feedback" style="width: 100%;"> Your username is required. </div>
+    </div>
+  <div class="form-group">
+    <label><i class="fa fa-envelope  fa-lg"></i>&nbsp; Email address<span class="text-muted">(Optional)</span></label>
+    <input type="email" class="form-control" id="email"  placeholder="you@example.com" required value="{{request.user.email}}" name="email">
+	<div class="invalid-feedback"> Please enter a valid email address. </div>
+    </div>
+  <div class="form-group">
+    <label><i class="fa fa-address-card  fa-lg"></i> &nbsp;Address </label>
+    <input type="text" class="form-control" id="address"  placeholder="1234 Main St" required value="{{request.user.address}}" name='address'>
+	<div class="invalid-feedback"> Please enter your address. </div>
+    </div>
+<div class="form-group">
+    <label><i class="fa fa-address-card  fa-lg" ></i> &nbsp;Phone No. <span class="text-muted">(Optional)</span> </label>
+    <input type="text" class="form-control" id="phone"  placeholder="Apartment or suite" name='phone' required value="{{request.user.phNo}}">
+    </div>	
+	
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="save-info">
+    <label class="form-check-label" for="exampleCheck1">Accept our Trems & Conditions</label>
+  </div>
+  <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+</form>
+    </div>
+	
+	
+</div>
+<section class="pt-5 pb-5">
+  <div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h3 class="mb-3">Carousel cards title </h3>
+        </div>
+        <div class="col-6 text-right">
+            <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+            <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                <i class="fa fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="col-12">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+  
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    <li data-target="#multi-item-example" data-slide-to="2"></li>
+	<li data-target="#multi-item-example" data-slide-to="3"></li>
+	<li data-target="#multi-item-example" data-slide-to="4"></li>
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!--/.Second slide-->
+
+    <!--Third slide-->
+    <div class="carousel-item">
+
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+		
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!--/.Third slide-->
+<!--Third slide-->
+    <div class="carousel-item">
+
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+		
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!--/.Third slide-->
+	<!--Third slide-->
+    <div class="carousel-item">
+
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+		
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!--/.Third slide-->
+  </div>
+  <!--/.Slides-->
+<!--Controls-->
+  <div class="controls-top">
+    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+  </div>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+<div class="container register">
+                <div class="row">
+				<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
+                            </li>
+                        </ul>
+                    <div class="col-md-12 register-right"> 
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Apply as a Employee</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password *" value="" />
+                                        </div>
+										<div class="form-group">
+                                            <div class="maxl">
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="gender" value="male" checked>
+                                                    <span> Male </span> 
+                                                </label>
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="gender" value="female">
+                                                    <span>Female </span> 
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control"  placeholder="Confirm Password *" value="" />
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                                <option>What is your Birthdate?</option>
+                                                <option>What is Your old Phone Number</option>
+                                                <option>What is your Pet Name?</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Enter Your Answer *" value="" />
+                                        </div>
+                                        <input type="submit" class="btnRegister"  value="Register"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <h3  class="register-heading">Apply as a Hirer</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *" value="" />
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                                <option>What is your Birthdate?</option>
+                                                <option>What is Your old Phone Number</option>
+                                                <option>What is your Pet Name?</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="`Answer *" value="" />
+                                        </div>
+                                        <input type="submit" class="btnRegister"  value="Register"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+			<br>
+			<br>
+			<div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+		
+		<div class="owl-carousel owl-theme">
+    <div class="item"><img src="s3.jpg"></div>
+    <div class="item"><img src="s3.jpg"></div>
+    <div class="item"><img src="s3.jpg"></div>
+    <div class="item"><img src="s3.jpg"></div>
+    <div class="item"><img src="s3.jpg"></div>
+    <div class="item"><img src="s3.jpg"></div>
+    <div class="item"><img src="s3.jpg"></div>
+    <div class="item"><img src="s3.jpg"></div>
+    <div class="item"><img src="s3.jpg"></div>
+    <div class="item"><img src="s3.jpg"></div>
+    <div class="item"><img src="s3.jpg"></div>
+    <div class="item"><img src="s3.jpg"></div>
+</div>
+
+        <div class="col-md-3 d-none d-md-block">
+          <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+ </body>
+ <script type="text/javascript">
+ $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:3
+        },
+        600:{
+            items:5
+        },
+        1000:{
+            items:7
+        }
+    }
+})
+
+  var pricePerItem = 8;
+    $('#quantityField').on('input',function(event){
+
+    var quantity = $(this).val();
+    
+    var total = pricePerItem * quantity;
+    
+    $('#totalField').text(total);
+    
+  });
+ </script>
+ </html>

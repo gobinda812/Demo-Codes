@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>new project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+ <style>
+.navbar{
+    background: #16222A !important;
+}
+.navbar .nav-item .nav-link{
+    color:#fff !important;
+		font-family: Helvatica;
+		
+    
+}
+.navbar-toggler{
+
+background-color: #fff;
+}
+.navbar .nav-item .nav-link:hover{
+    color:#33adff !important;
+	border-bottom: 1px solid #33adff;
+    
+}
+ 
+ 
+.hdn
+{
+    text-align: center;
+    height: 80px;
+    
+    color: #0d0808;
+    font-weight: bold;
+    line-height: 4.2;
+}
+.form-content
+{
+    padding: 5%;
+    border: none;
+    margin-bottom: 2%;
+}
+.form-control{
+    border-radius:none;
+}
+
+.nav-pills .nav-item .nav-link {
+				color: #fff;
+}
+.nav-pills .nav-item .nav-link:hover{
+ background-color: #ddd;
+  color: black;
+}
+footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top:20px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+.row.heading h2 {
+    color: #fff;
+    font-size: 52.52px;
+    line-height: 95px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img class="logo horizontal-logo" src="img/logo.svg" style="width:30px; height: 30px;">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+          </li>
+      <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+      <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+          
+      <li class="nav-item dropdown">
+            <a class="nav-link " href="#" data-toggle="dropdown">
+        SIGN UP
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">SELLER ACCOUNT</a>
+        <a class="dropdown-item" href="/accounts/traveller/account">USER ACCOUNT</a>
+        
+      </div>
+    </li>
+           
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+				<h2 class="hdn">Dashboard</h2><br>
+<div class="container">
+<ul class="nav nav-pills nav-fill" style= "background-color: #063822;
+  
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px
+">
+  <li class="nav-item">
+    <a target="_blank" class="nav-link " href="#">Location</a>
+  </li>
+  <li class="nav-item">
+    <a target="_blank" class="nav-link" href="#">Date & Time</a>
+  </li>
+  <li class="nav-item">
+    <a  target="_blank"class="nav-link" href="#">Highlights</a>
+  </li>
+  <li class="nav-item">
+    <a  target="_blank" class="nav-link" href="#">Tour Images</a>
+  </li>
+  <li class="nav-item">
+    <a  target="_blank" class="nav-link" href="#">Tour Descriptions</a>
+  </li>
+</ul>
+</div>
+ 
+  <div class="container register-form" >
+            <div class="form" >
+                
+
+                <div class="form-content">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+								<label>Starting Date</label>
+                               <input name="from_date" id="from-date" type="text" class="form-control" placeholder="From">
+                            </div>
+                            
+							
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+							<label>Ending Date</label>
+                                <input name="to_date" id="to-date" type="text" class="form-control" placeholder="To">
+                            </div>
+                            					
+                        </div>
+						
+						<div class="col-md-3">
+                            <div class="form-group">
+							<label>Result</label>
+                               <input id="difference" class="form-control" placeholder="Total no. of Years, Months and Days.">
+                            </div>
+                            
+							</div>
+							
+						
+						
+						
+						
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+		<div class="container">
+		<div class="card gedf-card" style="border:none;">
+                   
+                    <div class="card-body">
+                        
+                        <a class="card-link" href="#">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adip.</h5>
+                        </a>
+							<div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>Day 1</div>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa praesentium esse magnam nemo dolor
+                            sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+                        </p>
+                    </div>
+					</div>
+					
+					<div class="card gedf-card" style="border:none;">
+                   
+                    <div class="card-body">
+                        
+                        <a class="card-link" href="#">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adip.</h5>
+                        </a>
+							<div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>Day 1</div>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa praesentium esse magnam nemo dolor
+                            sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+                        </p>
+                    </div>
+					</div>
+					</div>
+						
+					<div class="form-group" id="add">
+    <button class="add_field_button">Add More Fields</button>
+    <div><input type="text" name="mytext[]"></div>
+</div>
+		
+		<footer class="mainfooter mt-2" role="contentinfo">
+            <div class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Heading 1</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#">Payment Center</a></li>
+                                    <li><a href="#">Contact Directory</a></li>
+                                    <li><a href="#">Forms</a></li>
+                                    <li><a href="#">News and Updates</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Heading 2</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Website Tutorial</a></li>
+                                    <li><a href="#">Accessibility</a></li>
+                                    <li><a href="#">Disclaimer</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Webmaster</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Heading 3</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Parks and Recreation</a></li>
+                                    <li><a href="#">Public Works</a></li>
+                                    <li><a href="#">Police Department</a></li>
+                                    <li><a href="#">Fire</a></li>
+                                    <li><a href="#">Mayor and City Council</a></li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Follow Us</h4>
+                            <ul class="social-network social-circle">
+                                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-github"></i></a>
+                                </li>
+                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 copy">
+                            <p class="text-center">&copy; Copyright 2018 - Company Name. All rights reserved.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    
+    </footer>
+
+<script type="text/javascript">
+$(function() {
+
+  // create the from date
+  $('#from-date').datepicker({
+    autoclose: true,
+    format: 'dd-mm-yyyy',
+  }).on('changeDate', function(ev) {
+    ConfigureToDate();
+  });
+
+
+  $('#to-date').datepicker({
+    autoclose: true,
+    format: 'dd-mm-yyyy',
+    startDate: $('#from-date').val()
+  });
+
+  // Set the min date on page load
+  ConfigureToDate();
+
+  // Resets the min date of the return date
+  function ConfigureToDate() {
+    $('#to-date').val("").datepicker("update");
+    $('#to-date').datepicker('setStartDate', $('#from-date').val());
+  }
+
+  $("input[name='to_date']").on('change', function() {
+    var fromDate = moment($('#from-date').val(), 'DD-MM-YYYY');
+    var toDate = moment($('#to-date').val(), 'DD-MM-YYYY');
+
+    if (fromDate.isValid() && toDate.isValid()) {
+      var duration = moment.duration(toDate.diff(fromDate));
+      $('#difference').val(
+        duration.years() + ' Year(s) ' + duration.months() + ' Month(s) ' + duration.days() + ' Day(s)'
+      );
+    }
+  });
+});
+
+$(document).ready(function() {
+	var max_fields      = 10; //maximum input boxes allowed
+	var wrapper   		= $("#add"); //Fields wrapper
+	var add_button      = $(".add_field_button"); //Add button ID
+	
+	var x = 1; //initlal text box count
+	$(add_button).click(function(e){ //on add input button click
+		e.preventDefault();
+		if(x < max_fields){ //max input box allowed
+			x++; //text box increment
+			$(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+		}
+	});
+	
+	$(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+		e.preventDefault(); $(this).parent('div').remove(); x--;
+	})
+});
+</script>
+</body>
+</html>

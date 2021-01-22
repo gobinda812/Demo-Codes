@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>new project</title>
+  <link rel="icon" href="/static/img/logo.jpg" type="image/gif" sizes="20x20">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	
+
+  <style>
+  body{
+  
+  }
+  
+  th {
+  background-color: #4b6cb7;
+  color: white;
+}
+
+tr:hover {
+	background-color: #4d4dff;
+	color:#fff;
+}
+.invoice {
+    position: relative;
+    background: #fff;
+    border: 1px solid #f4f4f4;
+    padding: 20px;
+    margin: 10px 25px;
+}
+.page-header {
+    margin: 10px 0 20px 0;
+    font-size: 22px;
+}
+
+ .navbar{
+    background: #16222A !important;
+}
+.navbar .nav-item .nav-link{
+    color:#fff !important;
+		font-family: Helvatica;
+		
+    
+}
+.navbar-toggler{
+
+background-color: #fff;
+}
+.navbar .nav-item .nav-link:hover{
+    color:#33adff !important;
+	border-bottom: 1px solid #33adff;
+    
+}
+ 
+ .jumbotron{
+    position: relative;
+    padding:0 !important;
+    margin-top:60px !important;
+	color: #fff;
+    background-image: url("s3.jpg");
+	background-size:cover;
+    margin-top: 23px;
+    text-align:center;
+    margin-bottom: 0 !important;
+	font-family: Helvatica;
+}
+nav > .nav.nav-tabs{
+
+  border: none;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+
+}
+
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active
+{
+  border: none;
+    padding: 18px 25px;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+}
+
+nav > div a.nav-item.nav-link.active:after
+ {
+  content: "";
+  position: relative;
+  bottom: -60px;
+  left: -10%;
+  border: 15px solid transparent;
+  border-top-color: #e74c3c ;
+}
+.tab-content{
+ 
+    line-height: 25px;
+    border: none;
+    border-top:5px solid #e74c3c;
+    
+    padding:30px 25px;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus
+{
+  border: none;
+    background: #e74c3c;
+    color:#fff;
+    border-radius:0;
+    transition:background 0.20s linear;
+}
+
+footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top:20px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+.row.heading h2 {
+    color: #fff;
+    font-size: 52.52px;
+    line-height: 95px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+  </style>
+   <body>
+   <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img class="logo horizontal-logo" src="img/logo.svg" style="width:30px; height: 30px;">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+          </li>
+      <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+      <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+          
+      <li class="nav-item dropdown">
+            <a class="nav-link " href="#" data-toggle="dropdown">
+        SIGN UP
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">SELLER ACCOUNT</a>
+        <a class="dropdown-item" href="/accounts/traveller/account">USER ACCOUNT</a>
+        
+      </div>
+    </li>
+           
+      </ul>
+    </div>
+  </div>
+</nav>
+ <div class="jumbotron">
+ 
+ <div class="container"style="height: 400px;">
+  <h2 class="display-4" style="line-height:3.2;">Hello,world!</h4>
+  <p class="lead">A mind that is stretched by a new experience can never go back to its old dimensions.</p>
+  <hr class="my-4">
+  <p> You need not even listen, just wait…the world will offer itself freely to you, unmasking itself.</p>
+  
+</div>
+</div>
+<!--<div class="container">
+<br>
+              <div class="row">
+                <div class="col-xs-12 ">
+                  <nav>
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active" id="nav-location-tab" data-toggle="tab" href="#nav-location" role="tab" aria-controls="nav-location" aria-selected="true"><i class="fa fa-map-marker fa-lg"></i>&nbsp; Location</a>
+                      <a class="nav-item nav-link" id="nav-date-tab" data-toggle="tab" href="#nav-date" role="tab" aria-controls="nav-date" aria-selected="false"> <i class="fa fa-calendar fa-lg"></i>&nbsp; Date & Price</a>
+                      <a class="nav-item nav-link" id="nav-highlight-tab" data-toggle="tab" href="#nav-highlight" role="tab" aria-controls="nav-highlight" aria-selected="false"><i class="fa fa-star fa-lg"></i>&nbsp;Highlights</a>
+                      <a class="nav-item nav-link" id="nav-tour-tab" data-toggle="tab" href="#nav-tour" role="tab" aria-controls="nav-tour" aria-selected="false"><i class="fa fa-globe fa-lg"></i>&nbsp;Tour Descriptions</a>
+					  <a class="nav-item nav-link" id="nav-tour-tab" data-toggle="tab" href="#nav-tour" role="tab" aria-controls="nav-tour" aria-selected="false"><i class="fa fa-globe fa-lg"></i>&nbsp;Tour Descriptions</a>
+                    <a class="nav-item nav-link" id="nav-tour-tab" data-toggle="tab" href="#nav-tour" role="tab" aria-controls="nav-tour" aria-selected="false"><i class="fa fa-globe fa-lg"></i>&nbsp;Tour Descriptions</a>
+                    
+                    </div>
+                  </nav>
+                  <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-location" role="tabpanel" aria-labelledby="nav-location-tab">
+                      <h4>Et et consectetur ipsum labore</h4> <p>excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim</p> <p>aliqua enim pariatur veniam sunt est aute sit</p> dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                    </div>
+                    <div class="tab-pane fade" id="nav-date" role="tabpanel" aria-labelledby="nav-date-tab">
+                      <h4>Et et consectetur ipsum labore</h4> <p>excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim</p> <p>aliqua enim pariatur veniam sunt est aute sit</p> dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore.on est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                    </div>
+                    <div class="tab-pane fade" id="nav-highlight" role="tabpanel" aria-labelledby="nav-highlight-tab">
+                      <h4>Et et consectetur ipsum labore</h4> <p>excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim</p> <p>aliqua enim pariatur veniam sunt est aute sit</p> dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore.on est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                    </div>
+                    <div class="tab-pane fade" id="nav-tour" role="tabpanel" aria-labelledby="nav-tour-tab">
+					<div class="container">
+
+  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Tour Images</h1>
+
+  <hr class="mt-2 mb-5">
+
+  <div class="row text-center text-lg-left">
+
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
+          </a>
+    </div>
+  </div>
+
+</div>
+                      Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                    </div>
+                  </div>
+                
+                </div>
+				
+              </div>
+        </div>-->
+		
+		<section class="content content_content" style="width: 90%; margin: auto;   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <section class="invoice">
+                        <!-- title row -->
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="page-header">
+                                   <h3> <i class="fa fa-globe"></i> TRAVMAKS Co.</h3>
+                                    </div>
+								
+                            </div><!-- /.col -->
+							<div class="col-md-6 text-right ml-auto">
+                            <p class="font-weight-bold mb-1">Your Booking History</p>
+                            <p class="text-muted">Date: 4 Dec, 2019</p>
+                        </div>
+                        </div>
+                        <!-- info row -->
+                        <div class="row invoice-info">
+                            <div class="col-sm-4 invoice-col">
+                                From
+                                <address>
+                                    <strong>
+                                        Gobinda Ghosh                                    
+										</strong>
+                                    <br>
+                                    Address:
+                                    Dumdum                                    <br>
+                                    Phone:
+                                    123456789                                   <br>
+                                    Email:ggggg@gmail.com
+                                </address>
+                            </div><!-- /.col -->
+                            <div class="col-sm-4 invoice-col">
+                                To
+                                <address>
+                                    <strong>
+                                        Gobinda Ghosh                                    
+										</strong>
+                                    <br>
+                                    Address:
+                                    Dumdum                                    <br>
+                                    Phone:
+                                    123456789                                   <br>
+                                    Email:ggggg@gmail.com                                </address>
+                            </div><!-- /.col -->
+                            <div class="col-sm-4 invoice-col">
+                                <h4 style="font-size:30px; ">Total Amount</h4>
+							
+                                <b style="font-size:20px;">₹2000</b> 
+                            </div><!-- /.col -->
+                        </div><!-- /.row -->
+
+                        <!-- Table row -->
+                        <div class="row">
+                            <div class="col-xs-12 table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Tour Id</th>
+                                            <th>Tour Name</th>
+                                            <th>Starting Location</th>
+                                            <th>Ending Location</th>
+                                             <th>Start Date</th>
+                                             <th>End Date</th>
+                                            <th>Total Members</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                        
+                                        <tr>
+                                            <td>2</td>
+                                            <td>18</td>
+                                            <td>12500</td>
+                                            <td>25000</td>
+                                            <td>25000</td>
+                                            <td>25000</td>
+                                            <td>25000</td>
+                                        </tr>
+										
+										<tr>
+                                            <td>2</td>
+                                            <td>18</td>
+                                            <td>12500</td>
+                                            <td>25000</td>
+                                            <td>25000</td>
+                                            <td>25000</td>
+                                            <td>25000</td>
+                                        </tr>
+										
+										<tr>
+                                            <td>2</td>
+                                            <td>18</td>
+                                            <td>12500</td>
+                                            <td>25000</td>
+                                            <td>25000</td>
+                                            <td>25000</td>
+                                            <td>25000</td>
+                                        </tr>
+										
+                                                                            </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                </section>
+
+
+
+      
+
+<footer class="mainfooter mt-2" role="contentinfo">
+            <div class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Heading 1</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#">Payment Center</a></li>
+                                    <li><a href="#">Contact Directory</a></li>
+                                    <li><a href="#">Forms</a></li>
+                                    <li><a href="#">News and Updates</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Heading 2</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Website Tutorial</a></li>
+                                    <li><a href="#">Accessibility</a></li>
+                                    <li><a href="#">Disclaimer</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Webmaster</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Heading 3</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Parks and Recreation</a></li>
+                                    <li><a href="#">Public Works</a></li>
+                                    <li><a href="#">Police Department</a></li>
+                                    <li><a href="#">Fire</a></li>
+                                    <li><a href="#">Mayor and City Council</a></li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Follow Us</h4>
+                            <ul class="social-network social-circle">
+                                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-github"></i></a>
+                                </li>
+                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 copy">
+                            <p class="text-center">&copy; Copyright 2018 - Company Name. All rights reserved.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    
+    </footer>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $(".reply-popup").click(function(){
+    $(".reply-box").toggle();
+  });
+});
+
+
+const $dropdown = $(".dropdown");
+      const $dropdownToggle = $(".dropdown-toggle");
+      const $dropdownMenu = $(".dropdown-menu");
+      const showClass = "show";
+
+      $(window).on("load resize", function () {
+          if (this.matchMedia("(min-width: 768px)").matches) {
+              $dropdown.hover(
+                  function () {
+                      const $this = $(this);
+                      $this.addClass(showClass);
+                      $this.find($dropdownToggle).attr("aria-expanded", "true");
+                      $this.find($dropdownMenu).addClass(showClass);
+                  },
+                  function () {
+                      const $this = $(this);
+                      $this.removeClass(showClass);
+                      $this.find($dropdownToggle).attr("aria-expanded", "false");
+                      $this.find($dropdownMenu).removeClass(showClass);
+                  }
+              );
+          } else {
+              $dropdown.off("mouseenter mouseleave");
+          }
+      });
+	  
+	  jQuery( document ).ready( function($) {
+$( window ).scroll( function () {
+  if ( $(document).scrollTop() > 150 ) {
+    // Navigation Bar
+    $('.navbar').removeClass('fadeIn');
+    $('body').addClass('shrink');
+    $('.navbar').addClass('animated fadeInDown');
+  } else {
+    $('.navbar').removeClass('fadeInDown');
+    $('body').removeClass('shrink');
+    $('.navbar').addClass('animated fadeIn');
+  }
+});
+});
+</script>
+
+</body>
+</html>

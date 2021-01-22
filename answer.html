@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Answer </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+.navbar{
+    background: #16222A !important;
+}
+.navbar .nav-item .nav-link{
+    color:#fff !important;
+		font-family: Helvatica;
+		
+    
+}
+.navbar-toggler{
+
+background-color: #fff;
+}
+.navbar .nav-item .nav-link:hover{
+    color:#33adff !important;
+    
+}
+footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top:20px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+.row.heading h2 {
+    color: #fff;
+    font-size: 52.52px;
+    line-height: 95px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.comments-details button.btn.dropdown-toggle,
+.comments-details .total-comments {
+    font-size: 18px;
+    font-weight: 500;
+    color: #5e5e5e;
+}
+.comments-details {
+    padding: 15px 15px;
+}
+.comments .comments .dropdown,
+.comments .dropup {
+    position: relative;
+}
+.comments button {
+    background-color: transparent;
+    border: none;
+}
+.comments .comment-box {
+    width: 100%;
+    float: left;
+    height: 100%;
+    background-color: #FAFAFA;
+    padding: 10px 10px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.comments .add-comment {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    margin-bottom: 50px;
+}
+.comments .commenter-pic {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    overflow: hidden;
+    background-color: #fff;
+}
+.comments .add-comment .commenter-name {
+    width: 100%;
+    padding-left: 75px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+.comments .add-comment input {
+    border-top: 0px;
+    border-bottom: 1px solid #ccc;
+    border-left: 0px;
+    border-right: 0px;
+    outline: 0px;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+    padding: 0;
+    font-weight: normal;
+}
+.comments .add-comment input:focus {
+    border-color: #03a9f4;
+    border-width: 2px;
+}
+.comments .add-comment button[type=submit] {
+    background-color: #03a9f4;
+    color: #fff;
+    margin-right: 0px;
+}
+.comments .add-comment button {
+    background-color: #f5f5f5;
+    margin: 10px 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    float: right;
+}
+.comments .commenter-name .comment-time {
+    font-weight: normal;
+    margin-left: 8px;
+    font-size: 15px;
+}
+.comments p.comment-txt {
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    padding: 0px 0px 15px;
+}
+.comments .commenter-name {
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.comments .comment-meta {
+    font-size: 14px;
+    color: #333;
+    padding: 2px 5px 0px;
+    line-height: 20px;
+    float: right;
+}
+.comments .reply-box {
+    display: none;
+}
+.comments .replied {
+    background-color: #fff;
+    width: 95%;
+    float: right;
+    margin-top: 15px;
+}
+
+/*======Responsive CSS=======*/
+@media (max-width: 767px){
+.comments .commenter-name {
+    font-size: 13px;
+    top: -5px;
+}
+.comments .commenter-pic {
+    width: 40px;
+    height: 40px;
+}
+.comments .commenter-name a{
+  display: block;
+}
+.comments .commenter-name .comment-time{
+  display: block;
+  margin-left: 0px;
+}
+}
+
+
+.box {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.our-services {
+    margin-top: 75px;
+    padding-bottom: 30px;
+    padding: 0 60px;
+    min-height: 198px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17)
+}
+
+.our-services .icon {
+    margin-bottom: -21px;
+    transform: translateY(-50%);
+    text-align: center
+}
+
+.our-services:hover h4,
+.our-services:hover p {
+    color: #fff
+}
+
+.speedup:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%)
+}
+
+.settings:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+}
+
+.privacy:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)
+}
+
+.backups:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%)
+}
+
+.ssl:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%)
+}
+
+.database:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
+}
+.highlight {
+    width: 30rem;
+    height: 5rem;
+    margin: 0px auto;
+    background-color: rgb(255, 223, 128);
+    text-align: center;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: rgb(56, 73, 107);
+}
+/*-----------------------------------------------------------------------------------*/
+/*  Portfolio
+/*-----------------------------------------------------------------------------------*/
+
+#tabs{
+	background: fff;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: black;
+    background-color:  none;
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    color: #070807;
+    font-size: 20px;
+}
+
+</style>  
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img class="logo horizontal-logo" src="logo.png" style="width:30px; height: 30px;">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+          </li>
+      <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+      <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+          
+      <li class="nav-item dropdown">
+            <a class="nav-link " href="#" data-toggle="dropdown">
+        SIGN UP
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">SELLER ACCOUNT</a>
+        <a class="dropdown-item" href="/accounts/traveller/account">USER ACCOUNT</a>
+        
+      </div>
+    </li>
+           
+      </ul>
+    </div>
+  </div>
+</nav>
+<br><br><br>
+
+<div class="container">
+  <div class="row">
+  
+   <div class="card gedf-card" style="border:none;">
+                   
+                    <div class="card-body">
+                        
+                        <a class="card-link" href="#">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adip.</h5>
+                        </a>
+							<div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa praesentium esse magnam nemo dolor
+                            sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+                        </p>
+                    </div>
+					</div>
+    <div class="col-12">
+      <div class="comments">
+        <div class="comments-details">
+          <span class="total-comments comments-sort">117 Comments</span><br>
+          <span class="dropdown">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Sort By <span class="caret"></span></button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Top Comments</a>
+              <a href="#" class="dropdown-item">Newest First</a>
+              </div>
+          </span>     
+        </div>
+        <div class="comment-box add-comment">
+          <span class="commenter-pic">
+            <img src="/images/user-icon.jpg" class="img-fluid">
+          </span>
+          <span class="commenter-name">
+            <input type="text" placeholder="Add a public comment" name="Add Comment">
+            <button type="submit" class="btn btn-default">Comment</button>
+            <button type="cancel" class="btn btn-default">Cancel</button>
+          </span>
+        </div>
+        <div class="comment-box">
+          <span class="commenter-pic">
+            <img src="/images/user-icon.jpg" class="img-fluid">
+          </span>
+          <span class="commenter-name">
+            <a href="#">Happy uiuxStream</a> <span class="comment-time">2 hours ago</span>
+          </span>       
+          <p class="comment-txt more">Suspendisse massa enim, condimentum sit amet maximus quis, pulvinar sit amet ante. Fusce eleifend dui mi, blandit vehicula orci iaculis ac.</p>
+          <div class="comment-meta">
+            <button class="comment-like"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 99</button>
+            <button class="comment-dislike"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 149</button> 
+            <button class="comment-reply reply-popup"><i class="fa fa-reply-all" aria-hidden="true"></i> Reply</button>         
+          </div>
+          <div class="comment-box add-comment reply-box">
+            <span class="commenter-pic">
+              <img src="/images/user-icon.jpg" class="img-fluid">
+            </span>
+            <span class="commenter-name">
+              <input type="text" placeholder="Add a public reply" name="Add Comment">
+              <button type="submit" class="btn btn-default">Reply</button>
+              <button type="cancel" class="btn btn-default reply-popup">Cancel</button>
+            </span>
+          </div>
+        </div>
+        <div class="comment-box">
+          <span class="commenter-pic">
+            <img src="/images/user-icon.jpg" class="img-fluid">
+          </span>
+          <span class="commenter-name">
+            <a href="#">Happy uiuxStream</a> <span class="comment-time">2 hours ago</span>
+          </span>       
+          <p class="comment-txt more">Suspendisse massa enim, condimentum sit amet maximus quis, pulvinar sit amet ante. Fusce eleifend dui mi, blandit vehicula orci iaculis ac.</p>
+          <div class="comment-meta">
+            <button class="comment-like"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 99</button>
+            <button class="comment-dislike"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 149</button> 
+            <button class="comment-reply"><i class="fa fa-reply-all" aria-hidden="true"></i> Reply</button>         
+          </div>
+          <div class="comment-box replied">
+            <span class="commenter-pic">
+              <img src="/images/user-icon.jpg" class="img-fluid">
+            </span>
+            <span class="commenter-name">
+              <a href="#">Happy uiuxStream</a> <span class="comment-time">2 hours ago</span>
+            </span>       
+            <p class="comment-txt more">Suspendisse massa enim, condimentum sit amet maximus quis, pulvinar sit amet ante. Fusce eleifend dui mi, blandit vehicula orci iaculis ac.</p>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div class="card">
+                    <img class="card-img-top" src="s2.jpg">
+                    <div class="card-block">
+                        <h5 class="text-bold text-center">Title</h5>
+                    </div>
+					<div class="card-text">
+                           <a href="#c1" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="c1">
+              <span class="collapsed">more...</span><span class="expanded">...less</span>
+              </a>
+            </p>
+            <div class="collapse" id="c1">
+              <p>some content</p>
+            </div>
+	</div>
+</div>
+                        </div>
+                </div>
+            </div>
+
+
+<div class="container">
+<h2>PORTFOLIO</h2>
+<section id="tabs">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 ">
+				<nav>
+					<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+						<a class="nav-item nav-link active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">All</a>
+						<a class="nav-item nav-link" id="nav-ecom-tab" data-toggle="tab" href="#nav-ecom" role="tab" aria-controls="nav-ecom" aria-selected="false">E-Commerce</a>
+						<a class="nav-item nav-link" id="nav-travel-tab" data-toggle="tab" href="#nav-travel" role="tab" aria-controls="nav-travel" aria-selected="false">Travel</a>
+						<a class="nav-item nav-link" id="nav-doctor-tab" data-toggle="tab" href="#nav-doctor" role="tab" aria-controls="nav-doctor" aria-selected="false">Doctor</a>
+					</div>
+				</nav>
+				<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+					<div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+					<div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb nature">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="p1.png"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="p1.png"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb nature">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="p3.png"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="p3.png"
+                         alt="Another alt text">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb cars">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="p4.png"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="p4.png"
+						 alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb people">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1"
+                   data-image="p2.jpeg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="p2.jpeg"
+                         alt="Another alt text">
+                </a>
+            </div>
+            
+        </div>	
+					</div>
+					<div class="tab-pane fade" id="nav-ecom" role="tabpanel" aria-labelledby="nav-ecom-tab">
+					<div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb nature">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="p2.jpeg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="p2.jpeg"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb nature">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="p1.png"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="p1.png"
+                         alt="Another alt text">
+                </a>
+            </div>
+
+            
+        </div>
+					</div>
+					<div class="tab-pane fade" id="nav-travel" role="tabpanel" aria-labelledby="nav-travel-tab">
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb people">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1"
+                   data-image="s2.jpg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="s2.jpg"
+                         alt="">
+                </a>
+            </div>
+					</div>
+					<div class="tab-pane fade" id="nav-doctor" role="tabpanel" aria-labelledby="nav-doctor-tab">
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb people">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1"
+                   data-image="s3.jpg"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="s3.jpg"
+                         alt="">
+                </a>
+            </div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+</section>
+
+	<div class="row">
+		
+
+
+        <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="image-gallery-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                        </button>
+
+                        <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+
+
+
+<div class="highlight">Get 100% OFF on the Sign Up Fee</div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+let modalId = $('#image-gallery');
+
+$(document)
+  .ready(function () {
+
+    loadGallery(true, 'a.thumbnail');
+
+    //This function disables buttons when needed
+    function disableButtons(counter_max, counter_current) {
+      $('#show-previous-image, #show-next-image')
+        .show();
+      if (counter_max === counter_current) {
+        $('#show-next-image')
+          .hide();
+      } else if (counter_current === 1) {
+        $('#show-previous-image')
+          .hide();
+      }
+    }
+
+    /**
+     *
+     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+     * @param setClickAttr  Sets the attribute for the click handler.
+     */
+
+    function loadGallery(setIDs, setClickAttr) {
+      let current_image,
+        selector,
+        counter = 0;
+
+      $('#show-next-image, #show-previous-image')
+        .click(function () {
+          if ($(this)
+            .attr('id') === 'show-previous-image') {
+            current_image--;
+          } else {
+            current_image++;
+          }
+
+          selector = $('[data-image-id="' + current_image + '"]');
+          updateGallery(selector);
+        });
+
+      function updateGallery(selector) {
+        let $sel = selector;
+        current_image = $sel.data('image-id');
+        $('#image-gallery-title')
+          .text($sel.data('title'));
+        $('#image-gallery-image')
+          .attr('src', $sel.data('image'));
+        disableButtons(counter, $sel.data('image-id'));
+      }
+
+      if (setIDs == true) {
+        $('[data-image-id]')
+          .each(function () {
+            counter++;
+            $(this)
+              .attr('data-image-id', counter);
+          });
+      }
+      $(setClickAttr)
+        .on('click', function () {
+          updateGallery($(this));
+        });
+    }
+  });
+
+// build key actions
+$(document)
+  .keydown(function (e) {
+    switch (e.which) {
+      case 37: // left
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+          $('#show-previous-image')
+            .click();
+        }
+        break;
+
+      case 39: // right
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+          $('#show-next-image')
+            .click();
+        }
+        break;
+
+      default:
+        return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+  });
+
+</script>
