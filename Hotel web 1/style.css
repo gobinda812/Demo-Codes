@@ -285,9 +285,9 @@ cursor:pointer;
 
 #footer {
 	padding: 60px 0;
-    background: #0d141c !important;
-	/* background: url(img/s3.jpg) no-repeat center;
-    background-size: cover;*/
+   /* background: #0d141c !important;*/
+	 background: url(img/s3.jpg) no-repeat center;
+    background-size: cover;
 }
 #footer h5{
 	font-weight: 600;
@@ -365,14 +365,20 @@ cursor:pointer;
 		
 
 }
-.owl-carousel owl-theme.item img{
+.item img{
 	display: block;
-  transition: transform .5s ease;
+   transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
 	
 }
 
-.owl-carousel .item:hover img{
-	transform: scale(1.2);
+.item:hover img{
+	transform: scale(1.1) 
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
 	overflow: hidden !important; /* [1.2] Hide the overflowing of child elements */
 	}
 

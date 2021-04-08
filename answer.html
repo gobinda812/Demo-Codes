@@ -425,6 +425,38 @@ ul{
   </div>
 </nav>
 <br><br><br>
+<div class="container">
+  <h3>Popover Example</h3>
+  <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+
+
+<div class="col-md-4">
+                        <h6>Booked by:</h6>
+                        <a id="popoverData" href="#"
+                            data-content="<b>Billing Details</b>
+                            <br>{{tour.customer_name}} 
+                            <br>{{tour.customer_email}}
+                            <br>{{tour.customer_phone}}
+                            <br>{{tour.customer_address}}"
+                            rel="popover" data-html="true" data-placement="bottom" data-trigger="hover"
+                            style="transform: translate(-15px,0px); font-weight:bold;">
+                            {{tour.customer_name}}</a>
+
+                        <script>
+                            $('#popoverData').popover();
+                            $('#popoverOption').popover({ trigger: "hover" });
+                        </script>
+
+
+                    </div>
 
 <div class="container">
   <div class="row">
@@ -648,6 +680,20 @@ ul{
 		</div>
 	</div>
 </section>
+
+
+<a id="3" href="#" data-content="<b>Billing Details</b>
+                            <br>Samrat Basak 
+                            <br>shiba.saptorshe@gmail.com
+                            <br>6290088601
+                            <br>Amtala Adarsha Pally, B.P road" rel="popover" data-html="true" data-placement="bottom" data-trigger="hover" style="transform: translate(-15px,0px); font-weight:bold;">
+                            Samrat Basak</a>
+<script>
+                            $('3').popover();
+                            $('#popoverOption').popover({ trigger: "hover" });
+                        </script>
+
+
 
 	<div class="row">
 		
